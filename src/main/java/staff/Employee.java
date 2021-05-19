@@ -27,4 +27,8 @@ public class Employee {
     public void raiseSalary(Double payRise){
         this.salary *= payRise;
     }
+
+    public double payBonus(){
+        return salary * 0.01;
+    }
 }
