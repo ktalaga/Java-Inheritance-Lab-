@@ -2,6 +2,8 @@ import org.junit.Before;
 import org.junit.Test;
 import staff.management.Manager;
 
+import static org.junit.Assert.assertEquals;
+
 public class ManagerTest {
 
     private Manager manager;
@@ -13,7 +15,7 @@ public class ManagerTest {
 
     @Test
     public void hasName(){
-
+    assertEquals("Konrad Talaga", manager.getName());
     }
 
 }
