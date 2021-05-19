@@ -14,30 +14,30 @@ public class DatabaseAdminTest {
     }
     @Test
     public void hasName(){
-        assertEquals("John Mayer", developer.getName());
+        assertEquals("Jimi Hendrix", databaseAdmin.getName());
     }
 
     @Test
     public void hasNINumber(){
-        assertEquals("BB121212", developer.getNINumber());
+        assertEquals("AB123412", databaseAdmin.getNINumber());
     }
 
     @Test
     public void hasSalary(){
-        assertEquals(27000, developer.getSalary(),0.00);
+        assertEquals(32000, databaseAdmin.getSalary(),0.00);
     }
 
 
     @Test
     public void canRaiseSalary(){
-        developer.raiseSalary(1200.50);
-        assertEquals(28200.5, developer.getSalary(), 0.00);
+        databaseAdmin.raiseSalary(1200.50);
+        assertEquals(33200.50, databaseAdmin.getSalary(), 0.00);
     }
 
     @Test
     public void canPayBonus(){
-        developer.payBonus();
-        assertEquals(270, developer.payBonus(), 0.00);
+        databaseAdmin.payBonus();
+        assertEquals(320, databaseAdmin.payBonus(), 0.00);
     }
 
 }
