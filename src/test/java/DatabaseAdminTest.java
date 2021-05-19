@@ -46,4 +46,16 @@ public class DatabaseAdminTest {
         assertEquals(32000, databaseAdmin.getSalary(), 0.00);
     }
 
+    @Test
+    public void canChangeNameIfNewNameIsNotAnEmptyString(){
+        databaseAdmin.changeName("Bob Marley");
+        assertEquals("Bob Marley", databaseAdmin.getName());
+    }
+
+    @Test
+    public void canRefuseToChangeNameIfNewNameIsAnEmptyString(){
+        databaseAdmin.changeName("");
+        assertEquals("Jimi Hendrix", databaseAdmin.getName());
+    }
+
 }

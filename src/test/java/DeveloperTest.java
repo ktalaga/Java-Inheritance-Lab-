@@ -46,6 +46,17 @@ public class DeveloperTest {
         developer.raiseSalary(-1200.50);
         assertEquals(27000, developer.getSalary(), 0.00);
     }
+    @Test
+    public void canChangeNameIfNewNameIsNotAnEmptyString(){
+        developer.changeName("Bob Marley");
+        assertEquals("Bob Marley", developer.getName());
+    }
+
+    @Test
+    public void canRefuseToChangeNameIfNewNameIsAnEmptyString(){
+        developer.changeName("");
+        assertEquals("John Mayer", developer.getName());
+    }
 
 
 }

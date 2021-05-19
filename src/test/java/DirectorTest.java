@@ -55,4 +55,16 @@ public class DirectorTest {
         assertEquals(68000, director.getSalary(), 0.00);
     }
 
+    @Test
+    public void canChangeNameIfNewNameIsNotAnEmptyString(){
+        director.changeName("Bob Marley");
+        assertEquals("Bob Marley", director.getName());
+    }
+
+    @Test
+    public void canRefuseToChangeNameIfNewNameIsAnEmptyString(){
+        director.changeName("");
+        assertEquals("Ozzy Osbourne", director.getName());
+    }
+
 }
