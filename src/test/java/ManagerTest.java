@@ -18,4 +18,9 @@ public class ManagerTest {
     assertEquals("Konrad Talaga", manager.getName());
     }
 
+    @Test
+    public void hasNINumber(){
+        assertEquals("GG123456", manager.getNINumber());
+    }
+
 }
